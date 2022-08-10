@@ -1,0 +1,46 @@
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &__form {
+        display: flex;
+        gap: 12px;
+    }
+}
+.socials__icon {
+    fill: $icon-clr;
+    transition: fill $anim-fast;
+
+    &--white {
+        fill: $btn-clr;
+    }
+
+    .socials__link:hover & {
+        fill: $btn-clr;
+    }
+
+    .socials__link:focus & {
+        fill: $btn-clr;
+    }
+}
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $anim-fast;
+
+    &:hover {
+        background-color: $logo-clr;
+    }
+
+    &:focus {
+        background-color: $logo-clr;
+    }
+    &--dark {
+        background-color: $secondary-bgr-icon;
+    }
+}

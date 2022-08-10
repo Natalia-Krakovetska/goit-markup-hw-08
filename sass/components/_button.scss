@@ -1,0 +1,54 @@
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn-dezign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+    margin: 0 auto;
+    min-width: 200px;
+    color: $btn-clr;
+    background-color: $logo-clr;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    transition: background-color $anim-fast;
+    &:hover {
+        background-color: $btn-focus-clr;
+    }
+    &:focus {
+        background-color: $btn-focus-clr;
+    }
+}
+
+
+.close__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $btn-clr;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill $anim-fast;
+    &:hover .close__icon {
+        fill: $logo-clr;
+    }
+
+    &:focus .close__icon {
+        fill: $logo-clr;
+    }
+}

@@ -1,0 +1,42 @@
+.navigation {
+    &__list {
+        color: $main-txt-clr;
+        display: flex;
+        gap: 50px;
+    }
+}
+
+.navigation__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $anim-fast;
+
+    &:hover {
+        color: $logo-clr;
+    }
+
+    &:focus {
+        color: $logo-clr;
+    }
+
+    &--current {
+        color: $logo-clr;
+    }
+
+    &--current::after {
+        color: $logo-clr;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border: none;
+        border-radius: 2px;
+        background-color: $logo-clr;
+    }
+}

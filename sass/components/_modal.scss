@@ -1,0 +1,16 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background-color: $btn-clr;
+    border-radius: 4px;
+    transition: transform $anim-fast;
+    text-align: center; 
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0) rotate(120deg);
+    }
+}

@@ -1,0 +1,36 @@
+.header {
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid $brd-hero-clr; 
+    
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        margin-left: auto;
+        flex-wrap: wrap;
+        gap: 50px;        
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color $anim-fast;
+        &:hover {
+            color: $logo-clr;
+        }
+        &:focus {
+            color: $logo-clr;
+        }
+    }
+    &__icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+}
+

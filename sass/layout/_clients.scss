@@ -1,0 +1,37 @@
+.clients {
+    &__list {
+        --card-item: 6;
+    }
+
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    border: 1px solid $icon-clr;
+    border-radius: 4px;
+    transition: border-color $anim-fast;
+
+    &:focus {
+        border-color: $logo-clr;
+    }
+
+    &:hover {
+        border-color: $logo-clr;
+    }
+}
+
+.clients__icon {
+    fill: $icon-clr;
+    transition: fill $anim-fast;
+
+    .clients__link:focus & {
+        fill: $logo-clr;
+    }
+
+    .clients__link:hover & {
+        fill: $logo-clr;
+    }
+}

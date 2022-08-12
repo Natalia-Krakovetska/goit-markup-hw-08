@@ -1,7 +1,18 @@
 .container {
-    width: 1200px;
+    // width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+    outline: 1px solid red;
+
+    @include mq(mob) {
+        width: 480px;
+    }
+    @include mq(tab) {
+        width: 768px;
+    }
+    @include mq(desk) {
+        width: 1200px;
+    }
 }

@@ -1,8 +1,19 @@
 .clients {
     &__list {
-        --card-item: 6;
-    }
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: var(--card-gap);
+        --card-item: 2;
 
+        @include mq(tab) {
+            --card-item: 3;
+        }
+
+        @include mq(desk) {
+            --card-item: 6;
+        }
+    }
 }
 
 .clients__link {

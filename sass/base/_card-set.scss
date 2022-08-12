@@ -1,8 +1,18 @@
 .card-set {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--card-gap);
+    flex-wrap: wrap;    
+    --card-item: 1;
+
+    @include mq(tab) {
+        --card-item: 2;
+    }
+
+    @include mq(desk) {
+        --card-item: 4;
+        ;
+    }
 }
+
 .card-item {
     flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-gap)) / var(--card-item));
 }

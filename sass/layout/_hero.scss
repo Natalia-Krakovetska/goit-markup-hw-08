@@ -1,10 +1,9 @@
 .hero {
     text-align: center;
     background-color: $bgr-clr;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
@@ -14,18 +13,31 @@
             $brd-gradient-clr,
             $brd-gradient-clr),
         url("../images/header.jpg");
-        
+
+    @include mq(desk) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+        height: 600px;
+    }
+
+
     &__title {
-        max-width: 696px;
+        margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;
+        max-width: 360px;
         color: $btn-clr;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: calc(60 / 44);
+        font-size: 26px;
+        line-height: calc(42 / 26);
         text-transform: uppercase;
         letter-spacing: 0.06em;
+        font-weight: 900;
+
+        @include mq(desk) {
+            max-width: 696px;
+            font-size: 44px;
+            line-height: calc(60 / 44);
+        }
     }
 }
-

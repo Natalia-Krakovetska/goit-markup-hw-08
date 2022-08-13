@@ -23,11 +23,14 @@
   </head>
   <body class="body">
     <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo logo--right" href="./"
           >Web<span class="logo--black">Studio</span></a
         >
+        <svg class="header_icon" width="24" height="16">
+          <use href="./images/icon.svg#menu_icon"></use>
+        </svg>
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -50,7 +53,7 @@
         <ul class="header__list list">
           <li class="header__item">
             <a
-              class="header__link envelope link hover"
+              class="header__link envelope link"
               href="mailto:info@devstudio.com"
             >
               <svg class="header__icon" width="16" height="12">
@@ -60,7 +63,7 @@
             </a>
           </li>
           <li class="header__item">
-            <a class="header__link link hover" href="tel:+380961111111">
+            <a class="header__link link" href="tel:+380961111111">
               <svg class="header__icon" width="10" height="16">
                 <use href="./images/icon.svg#phone"></use>
               </svg>
@@ -69,7 +72,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!--Main-->
     <main>
       <!--Baner-->
@@ -553,110 +556,112 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container">
-        <div>
-          <a class="logo logo--bottom" href="./"
-            >Web<span class="logo--white">Studio</span>
-          </a>
-          <address class="footer__address">
-            <ul class="footer__list list">
-              <li class="footer__item">
+        <div class="footer__wrap">
+          <div class="footer__field">
+            <a class="logo logo--bottom" href="./"
+              >Web<span class="logo--white">Studio</span>
+            </a>
+            <address class="footer__address">
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link link"
+                    href="https://goo.gl/maps/9ueQtpKUG1VsnXtN6"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link footer__link--contacts link"
+                    href="mailto:info@example.com"
+                    >info@example.com
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link footer__link--contacts link"
+                    href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__socials">
+            <p class="footer__text">присоединяйтесь</p>
+            <ul class="socials list">
+              <li class="socials__item">
                 <a
-                  class="footer__link link"
-                  href="https://goo.gl/maps/9ueQtpKUG1VsnXtN6"
+                  class="socials__link socials__link--dark link"
+                  href=""
                   target="_blank"
-                  rel="noreferrer noopener"
-                  >г. Киев, пр-т Леси Украинки, 26
-                </a>
-              </li>
-              <li class="footer__item">
-                <a
-                  class="footer__link footer__link--contacts link"
-                  href="mailto:info@example.com"
-                  >info@example.com
-                </a>
-              </li>
-              <li class="footer__item">
-                <a
-                  class="footer__link footer__link--contacts link"
-                  href="tel:+380991111111"
-                  >+38 099 111 11 11</a
+                  rel="noopener noreferrer"
+                  aria-label="иконка Instagram"
                 >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icon.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Instagram"
+                >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icon.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Instagram"
+                >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icon.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--dark link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Instagram"
+                >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icon.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__socials">
-          <p class="footer__text">присоединяйтесь</p>
-          <ul class="socials list">
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Instagram"
-              >
-                <svg
-                  class="socials__icon socials__icon--white"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icon.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Instagram"
-              >
-                <svg
-                  class="socials__icon socials__icon--white"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icon.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Instagram"
-              >
-                <svg
-                  class="socials__icon socials__icon--white"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icon.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link socials__link--dark link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Instagram"
-              >
-                <svg
-                  class="socials__icon socials__icon--white"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icon.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__field">
           <p class="footer__text">Подпишитесь на рассылку</p>

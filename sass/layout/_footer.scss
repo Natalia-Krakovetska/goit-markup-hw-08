@@ -16,7 +16,6 @@
 
     &__item:not(:last-child) {
         margin-bottom: 8px;
-
         @include mq(desk) {
             margin-bottom: 9px;
         }
@@ -34,47 +33,66 @@
         }
     }
 
-    & .container {
+    &__field {
+        @include mq(desk) {
+            margin-left: auto;
+        }
+    }
+
+    &__wrap {
         display: flex;
         gap: 60px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
+        @include mq(tab) {
+            flex-direction: row;
+            gap: 165px;
+        }
+
+        @include mq(desk) {
+            gap: 70px;
+        }
+    }
+}
+    .footer .container {
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
         @include mq(desk) {
             flex-direction: row;
-            gap: 70px;
+            gap: 93px;
             align-items: baseline;
-        }
-
-        & .socials__form {
-            @include mq(noDesk) {
-                display: block;
-            }
+            text-align: start;
         }
     }
 
 
-    &__field {
-        @include mq(desk) {
-            margin-left: auto;
+    .footer .socials__form {
+
+        @include mq(noDesk) {
+            display: block;
         }
     }
-}
 
-.footer__socials {
-    margin-bottom: 20px;
-}
-
-.footer__link {
-    color: $btn-clr;
-
-    &--contacts {
-        color: $mail-tel-clr;
-        font-style: normal;
+    .footer__socials {
+        margin-bottom: 20px;
     }
 
-    &:hover {
-        color: $btn-clr
+    .footer__link {
+        color: $btn-clr;
+
+        &--contacts {
+            color: $mail-tel-clr;
+            font-style: normal;
+        }
+
+        &:hover {
+            color: $btn-clr
+        }
     }
-}

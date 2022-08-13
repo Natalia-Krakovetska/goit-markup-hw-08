@@ -7,20 +7,28 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: $logo-clr;
+
     &--black {
-            color: $main-txt-clr;
-        }
+        color: $main-txt-clr;
+    }
+
     &--white {
-            color: $btn-clr;
+        color: $btn-clr;
+    }
+
+    &--right {
+        @include mq(tab) {
+            margin-right: 88px;
         }
-    // &--right {
-    //         margin-right: 93px;
-        
-    &--bottom {
+
+        @include mq(desk) {
+            margin-right: 93px;
+        }
+
+
+        &--bottom {
             display: block;
             margin-bottom: 20px;
         }
     }
-
-
-
+}

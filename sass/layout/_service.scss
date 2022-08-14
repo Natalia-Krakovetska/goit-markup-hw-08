@@ -1,46 +1,63 @@
-.service__filter {
-    margin-bottom: 50px;
-}
+// .service__filter {
+//     margin-bottom: 50px;
+// }
 
 .card {
-    --card-item: 3;
 
-    &__projects {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 24px;
-        padding-right: 24px;
-        border: 1px solid $brd-card-clr;
-        border-top: none;
+    --card-item: 1;
+
+    @include mq(tab) {
+        --card-item: 2;
     }
 
-    &__text {
-        font-size: 16px;
-        line-height: calc(30 / 16);
+    @include mq(desk) {
 
-        &--white {
-            text-align: left;
-            color: $btn-clr;
+
+        --card-item: 3;
+
+        &__text {
+            font-size: 16px;
+            line-height: calc(30 / 16);
+
+            @include mq(tab) {
+                font-size: 16px;
+                line-height: calc(19 / 16);
+            }
+
+
+            &--white {
+                text-align: left;
+                color: $btn-clr;
+                font-size: 18px;
+                line-height: calc(28 / 18);
+                user-select: none;
+            }
+        }
+
+        &__projects {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 24px;
+            padding-right: 24px;
+            border: 1px solid $brd-card-clr;
+            border-top: none;
+        }
+
+
+
+        &__subtitle {
+            color: $main-txt-clr;
             font-size: 18px;
-            line-height: calc(28 / 18);
-            user-select: none;
+            line-height: calc(36 / 18);
+            letter-spacing: 0.06em;
+            margin-bottom: 4px;
+        }
+
+        &__block {
+            position: relative;
+            overflow: hidden;
         }
     }
-
-    &__subtitle {
-        color: $main-txt-clr;
-        font-size: 18px;
-        line-height: calc(36 / 18);
-        letter-spacing: 0.06em;
-        margin-bottom: 4px;
-    }
-
-    &__block {
-        position: relative;
-        overflow: hidden;
-    }
-
-
 }
 
 .card__link {

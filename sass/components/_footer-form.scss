@@ -13,7 +13,8 @@
 
 .footer-form__input {
     padding: 15px 16px;
-    width: 368px;
+    margin-bottom: 20px;
+    width: 450px;
     background-color: transparent;
     color: $btn-clr;
     line-height: calc(20 / 16);
@@ -23,9 +24,9 @@
     outline: none;
     transition: border-color $anim-fast;
 
-    @include mq(noDesk) {
-        margin-bottom: 20px;
-        width: 450px;
+    @include mq(desk) {
+        margin-bottom: 0;
+        width: 368px;
     }
 
     &:focus {

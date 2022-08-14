@@ -8,8 +8,7 @@
     }
 
     @include mq(desk) {
-        --card-item: 4;
-        ;
+        --card-item: 4;        
     }
 }
 

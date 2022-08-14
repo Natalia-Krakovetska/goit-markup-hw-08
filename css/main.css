@@ -402,16 +402,16 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agreement__checkbox:checked + .agreement__icon .agreement__icon--uncheck {
+.agreement__checkbox:checked + .agreement__icon .agreement__icon-uncheck {
   opacity: 0;
 }
-.agreement__checkbox:checked + .agreement__icon .agreement__icon--check {
+.agreement__checkbox:checked + .agreement__icon .agreement__icon-check {
   opacity: 1;
 }
-.agreement__checkbox:focus + .agreement__icon .agreement__icon--uncheck {
+.agreement__checkbox:focus + .agreement__icon .agreement__icon-uncheck {
   fill: #2196f3;
 }
-.agreement__checkbox:hover + .agreement__icon .agreement__icon--uncheck {
+.agreement__checkbox:hover + .agreement__icon .agreement__icon-uncheck {
   fill: #2196f3;
 }
 
@@ -474,7 +474,8 @@ body {
 
 .footer-form__input {
   padding: 15px 16px;
-  width: 368px;
+  margin-bottom: 20px;
+  width: 450px;
   background-color: transparent;
   color: #ffffff;
   line-height: 1.25;
@@ -486,10 +487,10 @@ body {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (max-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .footer-form__input {
-    margin-bottom: 20px;
-    width: 450px;
+    margin-bottom: 0;
+    width: 368px;
   }
 }
 .footer-form__input:focus {
@@ -768,16 +769,16 @@ body {
   color: #212121;
 }
 .dignity__item {
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .dignity__item {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .dignity__item {
-    width: 270px;
+    max-width: 270px;
   }
 }
 .dignity__container {
@@ -880,20 +881,6 @@ body {
           box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706);
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
-  width: 450px;
-  height: 622px;
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    width: 354px;
-    height: 536px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    width: 270px;
-    height: 428px;
-  }
 }
 .team__list {
   -webkit-box-orient: vertical;
@@ -901,6 +888,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: var(--card-gap);
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -922,6 +911,8 @@ body {
   padding-bottom: 24px;
   padding-left: 122px;
   padding-right: 122px;
+  max-width: 450px;
+  max-height: 622px;
 }
 @media screen and (min-width: 768px) {
   .team__card {
@@ -929,11 +920,15 @@ body {
     padding-bottom: 24px;
     padding-left: 74px;
     padding-right: 74px;
+    max-width: 354px;
+    max-height: 536px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__card {
     padding: 30px;
+    max-width: 270px;
+    max-height: 428px;
   }
 }
 
@@ -996,11 +991,39 @@ body {
   fill: #2196f3;
 }
 
+.service__filter {
+  margin-bottom: 40px;
+}
+@media (max-width: 767.98px) {
+  .service__filter {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .service__filter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service__filter {
+    margin-bottom: 50px;
+  }
+}
+
 .card {
-  --card-item: 1;
+  gap: var(--card-gap);
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 @media screen and (min-width: 768px) {
   .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     --card-item: 2;
   }
 }
@@ -1008,67 +1031,53 @@ body {
   .card {
     --card-item: 3;
   }
-  .card__text {
-    font-size: 16px;
-    line-height: 1.875;
-  }
 }
-@media screen and (min-width: 1200px) and (min-width: 768px) {
-  .card__text {
-    font-size: 16px;
-    line-height: 1.1875;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card__text--white {
-    text-align: left;
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 1.5555555556;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card__projects {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border: 1px solid #eeeeee;
-    border-top: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card__subtitle {
-    color: #212121;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card__block {
-    position: relative;
-    overflow: hidden;
-  }
-}
-
-.card__link {
+.cardd__link {
   display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card__link:hover {
+.cardd__link__text {
+  font-size: 16px;
+  line-height: 1.875;
+}
+.cardd__link__subtitle {
+  color: #212121;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.cardd__link__projects {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .cardd__link__projects {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cardd__link__projects {
+    width: 370px;
+  }
+}
+.cardd__link__block {
+  position: relative;
+  overflow: hidden;
+}
+.car .card:hover {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
-.card__link:focus {
+.card:focus {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }

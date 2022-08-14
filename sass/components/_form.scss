@@ -122,19 +122,19 @@
 
 
 .agreement__checkbox {
-    &:checked+.agreement__icon .agreement__icon--uncheck {
+    &:checked+.agreement__icon .agreement__icon-uncheck {
         opacity: 0;
     }
 
-    &:checked+.agreement__icon .agreement__icon--check {
+    &:checked+.agreement__icon .agreement__icon-check {
         opacity: 1;
     }
 
-    &:focus+.agreement__icon .agreement__icon--uncheck {
+    &:focus+.agreement__icon .agreement__icon-uncheck {
         fill: $logo-clr;
     }
 
-    &:hover+.agreement__icon .agreement__icon--uncheck {
+    &:hover+.agreement__icon .agreement__icon-uncheck {
         fill: $logo-clr;
     }
 }

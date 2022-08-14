@@ -23,23 +23,12 @@
         box-shadow: 0px 2px 1px 0px #00000033;
         box-shadow: 0px 1px 1px 0px #00000024;
         box-shadow: 0px 1px 3px 0px #0000001f;
-        width: 450px;
-        height: 622px;
-
-        @include mq(tab) {
-            width: 354px;
-            height: 536px;
-        }
-
-        @include mq(desk) {
-            width: 270px;
-            height: 428px;
-        }
     }
 
     &__list {
         flex-direction: column;
         gap: var(--card-gap);
+        flex-wrap: nowrap;
 
         @include mq(tab) {
 
@@ -57,16 +46,22 @@
         padding-bottom: 24px;
         padding-left: 122px;
         padding-right: 122px;
+        max-width: 450px;
+        max-height: 622px;
 
         @include mq(tab) {
             padding-top: 30px;
             padding-bottom: 24px;
             padding-left: 74px;
             padding-right: 74px;
+            max-width: 354px;
+            max-height: 536px;
         }
 
         @include mq(desk) {
             padding: 30px;
+            max-width: 270px;
+            max-height: 428px;
         }
     }
 }

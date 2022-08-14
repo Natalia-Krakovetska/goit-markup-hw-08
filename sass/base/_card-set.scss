@@ -1,6 +1,4 @@
-.card-set {
-    display: flex;
-    flex-wrap: wrap;    
+.card-set {    
     --card-item: 1;
 
     @include mq(tab) {

@@ -10,6 +10,7 @@
     border-radius: 4px;
     transition: transform $anim-fast;
     text-align: center; 
+
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0) rotate(120deg);
     }

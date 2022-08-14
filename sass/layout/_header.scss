@@ -11,65 +11,20 @@
         @include mq(mob-only) {
             justify-content: space-between;
         }
-
     }
 
-    &__link {
-        display: flex;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        transition: color $anim-fast;
-
-        @include mq(tab-only) {
-            padding-top: 0;
-            padding-bottom: 0;
-
-        }
-
-        &:hover {
-            color: $logo-clr;
-        }
-
-        &:focus {
-            color: $logo-clr;
-        }
-    }
-
-    &__icon {
-        fill: currentColor;
+    &__btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
 
         @include mq(tab) {
-            margin-right: 8px;
-        }
-
-        @include mq(desk) {
-            margin-right: 10px;
-        }
-
-    }
-
-
-    &__list {
-        display: none;
-
-        @include mq(tab-only) {
-            display: flex;
-            flex-direction: column;
-
-            gap: 10px;
-            margin-left: auto;
-            margin-top: 21px;
-            margin-bottom: 21px;
-        }
-
-        @include mq(desk) {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            gap: 50px;
+            display: none;
         }
     }
+    &__icon {
+        fill: $main-txt-clr;    
     }
+}

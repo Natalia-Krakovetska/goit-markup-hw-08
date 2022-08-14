@@ -6,10 +6,13 @@
         padding-top: 0;
 
     &__list {
+        display: flex;
         --card-item: 3;
         gap: var(--card-gap);
     }
-
+        &__overlay-block {
+            position: relative;
+        }
     &__overlay {
         position: absolute;
         bottom: 0;
@@ -20,9 +23,7 @@
         height: 70px;
     }
 
-    &__overlay-block {
-        position: relative;
-    }
+
 
     &__text {
         font-weight: 700;

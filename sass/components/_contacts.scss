@@ -1,0 +1,52 @@
+.contacts {
+    display: none;
+    
+
+    @include mq(tab) {
+        display: flex;
+        flex-direction: column;
+            
+        gap: 10px;
+        margin-left: auto;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+
+    @include mq(desk) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+.contacts__link {
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $anim-fast;
+
+    @include mq(tab-only) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+.contacts__icon {
+    fill: currentColor;
+
+    @include mq(tab) {
+        margin-right: 8px;
+    }
+
+    @include mq(desk) {
+        margin-right: 10px;
+    }
+}
+//     &:hover {
+//         color: $logo-clr;
+//     }
+
+//     &:focus {
+//         color: $logo-clr;
+//     }
+// }

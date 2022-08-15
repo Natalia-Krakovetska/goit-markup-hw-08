@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
-
   <body class="body">
     <!--Header-->
     <header class="header">
@@ -155,13 +154,88 @@
           <ul class="operations__list card-set list">
             <li class="operations__item card-item">
               <div class="operations__overlay-block">
-                <img
-                  class="operations__img"
-                  src="./images/box1.jpg"
-                  alt="Человек работает на компьютере"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <!-- <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/operations/img@1x_ls.wedp 1x,
+                      ./images/operations/img@2x_ls.webp 2x
+                    "
+                    type="image/webp"
+                  /> -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ../images/operations/img@1x_ls.jpg 1x,
+                      ./images/operations/img@2x_ls.jpg  2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="operations__img"
+                    src="../images/operations/img@1x_ls.jpg"
+                    alt="Человек работает на компьютере"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+                <!-- <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/operations/img@1x_ls.wedp 1x,
+                      ./images/operations/img@2x_ls.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/operations/img@1x_ls.jpg 1x,
+                      ./images/operations/img@2x_ls.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/operations/img@1x_ms.wedp 1x,
+                      ./images/operations/img@2x_ms.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/operations/img@1x_ms.jpg 1x,
+                      ./images/operations/img@1x_ms.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 766px)"
+                    srcset="
+                      ./images/operations/img@1x_ss.wedp 1x,
+                      ./images/operations/img@2x_ss.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 766px)"
+                    srcset="
+                      ./images/operations/img@1x_ss.jpg 1x,
+                      ./images/operations/img@1x_ss.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="operations__img"
+                    src="./images/operations/img@1x_ls.jpg"
+                    alt="Человек работает на компьютере"
+                    width="370"
+                    height="294"
+                  />
+                </picture> -->
                 <div class="operations__overlay">
                   <p class="operations__text">Десктопные приложения</p>
                 </div>

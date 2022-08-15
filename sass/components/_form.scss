@@ -7,9 +7,14 @@
         display: block;
         text-align: left;
         margin-bottom: 4px;
-        font-size: 12px;
-        line-height: calc(14 / 12);
+        font-size: 14px;
+        line-height: calc(16 / 14);
         letter-spacing: 0.01em;
+
+        @include mq(desk) {
+            font-size: 12px;
+            line-height: calc(14 / 12);
+        }
     }
 
     &__agreement {
@@ -103,8 +108,15 @@
     }
 
     &__text {
+        font-size: 12px;
+        line-height: calc(14 / 12);        
         user-select: none;
         text-underline-position: under;
+
+        @include mq(desk) {
+            font-size: 14px;
+            line-height: calc(24 / 14);
+        }
     }
 }
 

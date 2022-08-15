@@ -28,6 +28,16 @@
         <a class="logo logo--right" href="./"
           >Web<span class="logo--black">Studio</span></a
         >
+        <button
+          class="header__btn btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="header__icon" width="24" height="16">
+            <use href="./images/icon.svg#menu_icon"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -45,21 +55,21 @@
             </li>
           </ul>
         </nav>
-        <ul class="header__list list">
-          <li class="header__item">
+        <ul class="contacts list">
+          <li class="contacts__item">
             <a
-              class="header__link envelope link hover"
+              class="contacts__link envelope link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="header__icon" width="16" height="12">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icon.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header__item">
-            <a class="header__link link hover" href="tel:+380961111111">
-              <svg class="header__icon" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icon.svg#phone"></use>
               </svg>
               +38 096 111 11 11
@@ -498,5 +508,95 @@
         </div>
       </div>
     </footer>
+    <!--Menu window-->
+    <div class="mobMenu js-menu-container" id="mobile-menu">
+      <button class="mobMenu__btn btn js-close-menu">
+        <svg class="mobMenu__icon" width="40" height="40">
+          <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobMenu__wrap">
+        <ul class="mobMenu__list list">
+          <li class="mobMenu__item">
+            <a
+              class="mobMenu__link mobMenu__link--active link"
+              href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="mobMenu__item">
+            <a
+              class="mobMenu__link mobMenu__link--active link"
+              href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobMenu__item">
+            <a class="mobMenu__link mobMenu__link--active link" href=""
+              >Контакты</a
+            >
+          </li>
+        </ul>
+        <ul class="mobMenu__list list">
+          <li class="mobMenu__item">
+            <a
+              class="mobMenu__link mobMenu__link--blue link"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobMenu__item">
+            <a
+              class="mobMenu__link mobMenu__link--transparent link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <ul class="mobMenu__list mobSocials list">
+        <li class="mobSocials__item">
+          <a
+            class="mobSocials__link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            href=""
+            >Instagram
+          </a>
+        </li>
+        <li class="mobSocials__item">
+          <a
+            class="mobSocials__link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            href=""
+            >Twitter
+          </a>
+        </li>
+        <li class="mobSocials__item">
+          <a
+            class="mobSocials__link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            href=""
+            >Facebook
+          </a>
+        </li>
+        <li class="mobSocials__item">
+          <a
+            class="mobSocials__link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            href=""
+            >LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

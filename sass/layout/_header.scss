@@ -19,12 +19,20 @@
         height: 40px;
         background-color: transparent;
         border: none;
+        
 
         @include mq(tab) {
             display: none;
-        }
+        }    
     }
     &__icon {
-        fill: $main-txt-clr;    
+        fill: $main-txt-clr; 
+        transition: fill $anim-fast;
+        .header__btn:hover & {
+            fill: $logo-clr;
+        }
+        .header__btn:focus & {
+            fill: $logo-clr;
+        }
     }
 }

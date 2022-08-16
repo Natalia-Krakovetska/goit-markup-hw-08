@@ -10,11 +10,12 @@
     transition: transform $anim-fast;
     
 
-&__wrap {
+    &__wrap {
     display: flex;
     flex-direction: column;
     gap: 306px;
-}
+    }
+    
     &__list {
         display: flex;
         flex-direction: column;

@@ -24,21 +24,20 @@
         box-shadow: 0px 1px 1px 0px #00000024;
         box-shadow: 0px 1px 3px 0px #0000001f;
     }
+
     &__item:not(:last-child) {
         margin-bottom: 30px;
     }
 
     &__list {
-        flex-direction: column;
-        gap: var(--card-gap);
-        flex-wrap: nowrap;
+        --card-item: 1;
 
         @include mq(tab) {
+            --card-item: 2;
+        }
 
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-
+        @include mq(tab) {
+            --card-item: 4;
         }
     }
 
@@ -50,21 +49,19 @@
         padding-left: 122px;
         padding-right: 122px;
         max-width: 450px;
-        max-height: 622px;
+        
 
         @include mq(tab) {
             padding-top: 30px;
             padding-bottom: 24px;
             padding-left: 74px;
             padding-right: 74px;
-            max-width: 354px;
-            max-height: 536px;
+            max-width: 354px;        
         }
 
         @include mq(desk) {
             padding: 30px;
-            max-width: 270px;
-            max-height: 428px;
+            max-width: 270px;        
         }
     }
 }

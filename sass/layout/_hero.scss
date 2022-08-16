@@ -3,7 +3,7 @@
     background-color: $bgr-clr;
     padding-top: 118px;
     padding-bottom: 118px;
-    height: 400px;
+    max-width: 1600px;    
     margin-right: auto;
     margin-left: auto;
     background-repeat: no-repeat;
@@ -11,16 +11,36 @@
     background-size: cover;
     background-image: linear-gradient(to right,
             $brd-gradient-clr,
-            $brd-gradient-clr),
-        url("../images/header.jpg");
+            $brd-gradient-clr), url("../images/hero/hero@1x_ss.jpg");
+    background-image: linear-gradient(to right,
+            $brd-gradient-clr,
+            $brd-gradient-clr), -webkit-image-set(url("../images/hero/hero@1x_ss.webp") 1x);
 
-    @include mq(desk) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        max-width: 1600px;
-        height: 600px;
+    @include mq(retina) {
+        background-image: url("../images/hero/hero@2x_ss.jpg");
+        background-image: -webkit-image-set(url("../images/hero/hero@2x_ss.webp") 2x);
     }
 
+    @include mq(tab) {
+        background-image: url("../images/hero/hero@1x_ms.jpg");
+        background-image: -webkit-image-set(url("../images/hero/hero@1x_ms.webp") 1x);
+
+        @include mq(retina) {
+            background-image: url("../images/hero/hero@2x_ms.jpg");
+            background-image: -webkit-image-set(url("../images/hero/hero@2x_ms.webp") 2x);
+        }
+    }
+    @include mq(desk) {
+        padding-top: 200px;
+        padding-bottom: 200px;        
+        background-image: url("../images/hero/hero@1x_ls.jpg");
+        background-image: -webkit-image-set(url("../images/hero/hero@1x_ls.webp") 1x);
+
+        @include mq(retina) {
+            background-image: url("../images/hero/hero@2x_ls.jpg");
+            background-image: -webkit-image-set(url("../images/hero/hero@2x_ms.webp") 2x);
+        }
+    }
 
     &__title {
         margin-bottom: 30px;

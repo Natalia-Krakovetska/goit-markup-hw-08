@@ -31,28 +31,28 @@
 }
 
 
-    // &:hover {
-    //     color: $logo-clr;
-    // }
+.navigation__link:hover {
+    color: $logo-clr;
+}
 
-    // &:focus {
-    //     color: $logo-clr;
-    // }
+.navigation__link:focus {
+    color: $logo-clr;
+}
 
-    // &--current {
-    //     color: $logo-clr;
-    // }
+.navigation__link--current {
+    color: $logo-clr;
+}
 
-    // &--current::after {
-    //     color: $logo-clr;
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     bottom: -1px;
-    //     display: block;
-    //     width: 100%;
-    //     height: 4px;
-    //     border: none;
-    //     border-radius: 2px;
-    //     background-color: $logo-clr;
-    // }
+.navigation__link--current::after {
+    color: $logo-clr;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: $logo-clr;
+}

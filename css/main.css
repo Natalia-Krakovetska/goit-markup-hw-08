@@ -532,21 +532,15 @@ body {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    overflow: scroll;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
     max-width: 528px;
     width: 100%;
-    min-height: 581px;
   }
 }
 .backdrop.is-hidden .modal {

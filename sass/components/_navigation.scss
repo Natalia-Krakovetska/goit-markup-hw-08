@@ -8,11 +8,11 @@
 
     &__link {
         position: relative;
+        display: flex;
         align-items: center;
         padding-top: 32px;
         padding-bottom: 32px;
         transition: color $anim-fast;
-
     }
 
     &__list {
@@ -23,10 +23,6 @@
             gap: 50px;
         }
 
-        @include mq(desk) {
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
     }
 }
 
@@ -38,7 +34,6 @@
 .navigation__link:focus {
     color: $logo-clr;
 }
-
 .navigation__link--current {
     color: $logo-clr;
 }

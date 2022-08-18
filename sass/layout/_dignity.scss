@@ -1,6 +1,4 @@
 .dignity {
-    display: block;
-    width: 100%;
 
     &__title {
         margin-bottom: 10px;
@@ -10,6 +8,9 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $main-txt-clr;
+        @include mq(mob-only) {
+            text-align: center;
+        }
     }
 
     &__item {
@@ -36,9 +37,7 @@
         border-radius: 4px;
     }
 
-    &__list {
-        --card-item: 1;
-    
+    &__list {    
         @include mq(tab) {
             --card-item: 2;
         }

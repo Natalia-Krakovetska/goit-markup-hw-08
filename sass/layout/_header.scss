@@ -4,10 +4,15 @@
     letter-spacing: 0.02em;
     border-bottom: 1px solid $brd-hero-clr;
 
+    @include mq(mob-only) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
     &__container {
         display: flex;
         align-items: center;
-        
+
         @include mq(mob-only) {
             justify-content: space-between;
         }
@@ -19,18 +24,21 @@
         height: 40px;
         background-color: transparent;
         border: none;
-        
+
 
         @include mq(tab) {
             display: none;
-        }    
+        }
     }
+
     &__icon {
-        fill: $main-txt-clr; 
+        fill: $main-txt-clr;
         transition: fill $anim-fast;
+
         .header__btn:hover & {
             fill: $logo-clr;
         }
+
         .header__btn:focus & {
             fill: $logo-clr;
         }

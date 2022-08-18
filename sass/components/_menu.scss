@@ -4,25 +4,14 @@
     left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 48px 40px;
     background-color: $btn-clr;
     transform: translateX(100%);
     transition: transform $anim-fast;
-    
 
-    &__wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 306px;
-    }
-    
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    &__link {        
+    &__link {
         color: $main-txt-clr;
         font-weight: 500;
         font-size: 40px;
@@ -36,12 +25,16 @@
             line-height: calc(24 / 28);
         }
 
-
         &--blue {
             color: $logo-clr;
             font-size: 34px;
             line-height: calc(40 / 34);
         }
+
+        &--current {
+            color: $logo-clr;
+        }
+
         &--active {
             &:hover {
                 color: $logo-clr;
@@ -51,39 +44,50 @@
                 color: $logo-clr;
             }
         }
-        
-    }
-
-    &__btn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $btn-clr;
-        border-radius: 50%;
-        border: transparent;
-        
-
-        &:hover .mobMenu__icon {
-            fill: $logo-clr;
-        }
-
-        &:focus .mobMenu__icon {
-            fill: $logo-clr;
-        }
     }
 }
-.mobMenu__icon {
-transition: fill $anim-fast;
+
+.mobMenu__list--nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: auto;
 }
 
-.mobMenu:nth-child(2) {
-    margin-bottom: 306px;
+.mobMenu__list--contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.mobMenu__mobSocials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mobMenu__btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $btn-clr;
+    border-radius: 50%;
+    border: transparent;
+
+    &:hover .mobMenu__icon {
+        fill: $logo-clr;
+    }
+
+    &:focus .mobMenu__icon {
+        fill: $logo-clr;
+    }
 }
 
 
@@ -91,19 +95,18 @@ transition: fill $anim-fast;
     transform: translateX(0);
 }
 
-.mobSocials {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 64px;
-
-    &__link {
-        color: $logo-clr;
-        font-size: 18px;
-        line-height: calc(22 / 18);
-        margin-right: 10px;
-    }
+.mobMenu__icon {
+    transition: fill $anim-fast;
 }
+
+
+.mobSocials__link {
+    color: $logo-clr;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    margin-right: 10px;
+}
+
 
 .mobSocials__item:not(:last-child) {
     border-right: 1px solid $border-clr;

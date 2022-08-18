@@ -4,9 +4,9 @@
     background-color: $btn-clr;
     border-radius: 4px;
     transition: transform $anim-fast;
-    text-align: center;
+    text-align: center;    
 
-    @include mq(mob) {               
+    @include mq(mob) {
         max-width: 450px;
         width: 100%;
     }
@@ -16,6 +16,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        
     }
 
     @include mq(desk) {

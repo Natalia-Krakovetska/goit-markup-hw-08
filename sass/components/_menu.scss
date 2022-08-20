@@ -6,6 +6,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 64px;
     padding: 48px 40px;
     background-color: $btn-clr;
     transform: translateX(100%);
@@ -58,8 +59,7 @@
 .mobMenu__list--contacts {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    margin-bottom: 64px;
+    gap: 32px;    
 }
 
 .mobMenu__mobSocials {

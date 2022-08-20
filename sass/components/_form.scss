@@ -121,6 +121,7 @@
 }
 
 .agreement__icon {
+    flex-shrink: 0;
 
     &--check {
         opacity: 0;
